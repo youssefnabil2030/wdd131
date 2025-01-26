@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
 }
+
 nav {
   background-color: #333;
   color: white;
@@ -9,38 +10,78 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
 }
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
   gap: 1rem;
   margin: 0;
   padding: 0;
+  opacity: 0;
+  animation: slideIn 1s 0.5s forwards; /* Animation delay for nav links */
 }
+
+/* Slide-in animation */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .nav-links a {
   text-decoration: none;
   color: white;
   padding: 0.5rem 1rem;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+/* Hover effect */
 .nav-links a:hover {
   background-color: #555;
   border-radius: 5px;
+  transform: translateY(-5px);
 }
+
 .cta {
   background-color: #007BFF;
   color: white;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 .cta:hover {
   background-color: #0056b3;
+  transform: translateY(-5px);
 }
 
 .container {
@@ -51,8 +92,35 @@ nav {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .container img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  opacity: 0;
+  animation: fadeInFooter 1s 1s forwards; /* Animation delay for footer */
+}
+
+/* Footer fade-in animation */
+@keyframes fadeInFooter {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-content p {
+  margin: 0;
 }
