@@ -17,7 +17,7 @@ nav {
   animation: fadeIn 1s forwards;
 }
 
-/* Fade-in animation */
+/* Fade-in animation for nav */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -41,10 +41,10 @@ nav {
   margin: 0;
   padding: 0;
   opacity: 0;
-  animation: slideIn 1s 0.5s forwards; /* Animation delay for nav links */
+  animation: slideIn 1s 0.5s forwards;
 }
 
-/* Slide-in animation */
+/* Slide-in animation for nav links */
 @keyframes slideIn {
   0% {
     opacity: 0;
@@ -63,7 +63,6 @@ nav {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover effect */
 .nav-links a:hover {
   background-color: #555;
   border-radius: 5px;
