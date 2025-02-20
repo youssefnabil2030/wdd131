@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        header {
+            background-color: #00bcd4;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #00bcd4;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Blockquote (Form Sections) */
+        blockquote {
+            background-color: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 5px solid #00bcd4;
+            border-radius: 5px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Form Elements */
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        select,
+        input[type="text"],
+        input[type="date"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        /* Submit Button */
+        input[type="submit"] {
+            background-color: #00bcd4;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #008c9e;
+        }
+    </style>
+</head>
+<body>
+
+    <header>Form Page</header>
+
+    <main>
+
+        <blockquote>
+            <label for="cars">Product Name</label>
+            <select name="Choose a Product" id="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+            </select>
+        </blockquote>
+
+        <blockquote>
+            <form>
+                <h3>What's your rate ?</h3>
+                <label><input type="radio" name="radgroup" value="A"> Very Good</label>
+                <label><input type="radio" name="radgroup" value="B"> Good</label>
+                <label><input type="radio" name="radgroup" value="C"> Meduim</label>
+                <label><input type="radio" name="radgroup" value="D"> Bad</label>
+            </form>
+        </blockquote>
+
+        <blockquote>
+            <form>
+                <h3>Birthday:</h3>
+                <input type="date" id="birthday" name="birthday">
+            </form>
+        </blockquote>
+
+        <blockquote>
+            <form>
+                <h3>What vehicles do you own?</h3>
+                <label><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> I have a bike</label>
+                <label><input type="checkbox" id="vehicle2" name="vehicle2" value="Car"> I have a car</label>
+                <label><input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"> I have a boat</label>
+            </form>
+        </blockquote>
+
+        <blockquote>
+            <div class="comment-box">
+                <h3>Leave a Comment</h3>
+                <textarea placeholder="Write your comment here..."></textarea>
+            </div>
+        </blockquote>
+
+        <blockquote>
+            <h3>Name</h3>
+            <input type="text" id="name" placeholder="Enter your name">
+        </blockquote>
+
+        <blockquote>
+            <input type="submit" value="Submit">
+        </blockquote>
+
+    </main>
+<br>
+    <footer>
+        &copy; 2025 Your Company Name. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
