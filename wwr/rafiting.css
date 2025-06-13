@@ -8,7 +8,6 @@
   --body-font: Arial, sans-serif;
   --float-direction: right;
 }
-*/
 body {
   background: #ff8800;
   height: 100vh;
@@ -17,6 +16,7 @@ body {
   font-family: var(--body-font);
 }
 
+*/
 .navbar {
   display: flex;
   background: #fff;
