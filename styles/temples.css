@@ -1,7 +1,12 @@
+/* General Styles */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
 }
+
+/* Header and Navigation */
 nav {
   background-color: #333;
   color: white;
@@ -10,10 +15,12 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
 }
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -21,38 +28,66 @@ nav {
   margin: 0;
   padding: 0;
 }
+
 .nav-links a {
   text-decoration: none;
   color: white;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s;
 }
+
 .nav-links a:hover {
   background-color: #555;
   border-radius: 5px;
 }
-.cta {
-  background-color: #007BFF;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-.cta:hover {
-  background-color: #0056b3;
+
+/* Main Content */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-.container {
+.temple-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
-.container img {
-  width: 100%;
-  height: auto;
+
+.temple-gallery img {
+  width: 320px;
+  height: 220px;
   border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
+
+.temple-gallery figcaption {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsive (required media query) */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .temple-gallery img {
+    width: 100%;
+    height: auto;
+  }
+}
+
