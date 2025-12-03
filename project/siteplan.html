@@ -3,64 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Plan - Your Project Name</title>
-    <!-- Link CSS file -->
+    <title>TechNova Hub - Website Planning</title>
     <link rel="stylesheet" href="siteplan.css">
-   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #2E8B57;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background-color: #FF6347;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            color: #2E8B57;
+        }
+        .wireframe {
+            border: 2px dashed #333;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+            background-color: #fff;
+        }
+        .color-box {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            border: 1px solid #000;
+        }
+        footer {
+            text-align: center;
+            background-color: #2E8B57;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        section {
+            background-color: #fff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
+    <header>
+        <h1>TechNova Hub</h1>
+        <p>Your Technology Learning & Resource Center</p>
+    </header>
 
-    <h1>Website Planning Document</h1>
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Tutorials</a>
+        <a href="#">Projects</a>
+        <a href="#">Resources</a>
+        <a href="#">Contact</a>
+    </nav>
 
-    <!-- Site Name -->
-    <div class="section" id="site-name">
-        <h2>Site Name</h2>
-        <p><strong>Project Name:</strong> TechNova Hub</p>
-        <p><strong>Reason:</strong> The name represents a technology-focused website that provides tutorials, resources, and tools for software developers and tech enthusiasts.</p>
-        <!-- Optional logo -->
-        <img src="logo.png" alt="TechNova Hub Logo" width="150">
-    </div>
+    <!-- Main Content -->
+    <main>
+        <!-- Site Purpose -->
+        <section>
+            <h2>Site Purpose</h2>
+            <p>The site provides tutorials, downloadable tools, coding challenges, and project ideas for beginner to advanced developers.</p>
+        </section>
 
-    <!-- Site Purpose -->
-    <div class="section" id="site-purpose">
-        <h2>Site Purpose</h2>
-        <p>The site provides educational resources, guides, and downloadable tools for software developers. It also hosts tutorials, coding challenges, and project ideas for beginner to advanced learners.</p>
-    </div>
+        <!-- Scenarios -->
+        <section>
+            <h2>Scenarios</h2>
+            <ul>
+                <li>How can I learn Python quickly as a beginner?</li>
+                <li>Where can I find project ideas to practice my coding skills?</li>
+            </ul>
+        </section>
 
-    <!-- Scenarios -->
-    <div class="section" id="scenarios">
-        <h2>Scenarios</h2>
-        <ul>
-            <li>How can I learn Python quickly as a beginner?</li>
-            <li>Where can I find project ideas to practice my coding skills?</li>
-        </ul>
-    </div>
+        <!-- Color Schema -->
+        <section>
+            <h2>Color Schema</h2>
+            <p><strong>Primary Color:</strong> #2E8B57 (green) – for headers & buttons</p>
+            <div class="color-box" style="background-color:#2E8B57;"></div>
+            <p><strong>Secondary Color:</strong> #FF6347 (tomato) – for nav & accents</p>
+            <div class="color-box" style="background-color:#FF6347;"></div>
+        </section>
 
-    <!-- Color Schema -->
-    <div class="section" id="color-schema">
-        <h2>Color Schema</h2>
-        <p><strong>Primary Color:</strong> #2E8B57 (Green) – Used for headings and buttons</p>
-        <div class="color-box" style="background-color:#2E8B57;"></div>
-        <p><strong>Secondary Color:</strong> #FF6347 (Tomato) – Used for accents and links</p>
-        <div class="color-box" style="background-color:#FF6347;"></div>
-    </div>
+        <!-- Typography -->
+        <section>
+            <h2>Typography</h2>
+            <p><strong>Font:</strong> Arial, sans-serif – Body text</p>
+            <p><strong>Font:</strong> Georgia, serif – Headings</p>
+        </section>
 
-    <!-- Typography -->
-    <div class="section" id="typography">
-        <h2>Typography</h2>
-        <p><strong>Font:</strong> Arial, sans-serif – Used for body text</p>
-        <p><strong>Font:</strong> Georgia, serif – Used for headings</p>
-    </div>
+        <!-- Wireframes -->
+        <section>
+            <h2>Wireframes</h2>
+            <h3>Mobile View</h3>
+            <div class="wireframe">[Mobile Home Page Wireframe]</div>
+            <h3>Desktop View</h3>
+            <div class="wireframe">[Desktop Home Page Wireframe]</div>
+        </section>
+    </main>
 
-    <!-- Wireframes -->
-    <div class="section" id="wireframes">
-        <h2>Wireframes</h2>
-        <h3>Mobile View</h3>
-        <div class="wireframe">[Mobile Wireframe Sketch]</div>
-
-        <h3>Desktop View</h3>
-        <div class="wireframe">[Desktop Wireframe Sketch]</div>
-    </div>
-
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 TechNova Hub. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
