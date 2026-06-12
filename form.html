@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A clean, responsive product review form for submitting user feedback on software engineering utilities.">
+    <meta name="author" content="Youssef Nabil Samir">
     <title>Product Review Form</title>
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/review.js" defer></script>
@@ -18,7 +20,7 @@
                 <label for="product-name">Product Name <span class="required">*</span></label>
                 <select id="product-name" name="productName" required>
                     <option value="" disabled selected>Select a Product ...</option>
-                    </select>
+                </select>
             </div>
 
             <div class="form-group">
@@ -27,16 +29,16 @@
                     <input type="radio" id="star5" name="rating" value="5" required>
                     <label for="star5" title="5 stars">☆</label>
                     
-                    <input type="radio" id="star4" name="rating" value="4">
+                    <input type="radio" id="star4" name="rating" value="4" required>
                     <label for="star4" title="4 stars">☆</label>
                     
-                    <input type="radio" id="star3" name="rating" value="3">
+                    <input type="radio" id="star3" name="rating" value="3" required>
                     <label for="star3" title="3 stars">☆</label>
                     
-                    <input type="radio" id="star2" name="rating" value="2">
+                    <input type="radio" id="star2" name="rating" value="2" required>
                     <label for="star2" title="2 stars">☆</label>
                     
-                    <input type="radio" id="star1" name="rating" value="1">
+                    <input type="radio" id="star1" name="rating" value="1" required>
                     <label for="star1" title="1 stars">☆</label>
                 </div>
             </div>
@@ -49,10 +51,22 @@
             <div class="form-group">
                 <label>Useful Features (Check all that apply)</label>
                 <div class="checkbox-group">
-                    <label><input type="checkbox" id="feature-durability" name="features" value="durability"> Durability</label>
-                    <label><input type="checkbox" id="feature-design" name="features" value="design"> Sleek Design</label>
-                    <label><input type="checkbox" id="feature-performance" name="features" value="performance"> High Performance</label>
-                    <label><input type="checkbox" id="feature-ease" name="features" value="easeOfUse"> Ease of Use</label>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature-durability" name="features" value="durability">
+                        <label for="feature-durability">Durability</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature-design" name="features" value="design">
+                        <label for="feature-design">Sleek Design</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature-performance" name="features" value="performance">
+                        <label for="feature-performance">High Performance</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="feature-ease" name="features" value="easeOfUse">
+                        <label for="feature-ease">Ease of Use</label>
+                    </div>
                 </div>
             </div>
 
